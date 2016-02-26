@@ -1,0 +1,25 @@
+LAN: <  1km
+MAN: < 10km, mehrere LANs, Stadt
+WAN: <100km, Festnetz, Land/Kontinent
+
+
+Intranet < Extranet < Internet
+
+Network:	- Fault Tolerance (Ausfallsicherheit, mehrere Wege)
+			- Scalability (Hinzuschalten von Geräten)
+			- Quality of Service (<1% fault Bits)
+			- Security
+
+BYOD: Bring Your Own Device
+
+Powerline
+Wireless Broadband: Tod
+
+Zero-hour/day attacks: An attack that occurs on the first day that a vulnerability becomes known
+
+Identity theft: An attack to steal the login credentials of a user in order to access private data
+
+Fehlerquelle: Interne Mitarbeiter, E-Mail Anhänge
+
+
+

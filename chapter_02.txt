@@ -1,0 +1,8 @@
+
+>		level1:		basic commands
+#		enable:		enter configuration mode
+[configure]#	configure:	enter configuration mode
+
+
+commands are executed immediatly
+
