@@ -1,0 +1,49 @@
+Communication is between Transport layers in segments. They don't know the other 3 layers
+
+
+Manchaster: (0 sig: from 0 to 1  // 1 sig: from 1 to 0)
+	- requires 2x the bandwith
+	+ no DC --> galv. trennung (Coupler, the higher f --> the smaller the coil)
+	+ syncronisation is easier
+
+NRZ (non returning zero)
+	oppsite of Manchaster
+
+300Hz - 6kHz is required for clear communication and direction detection
+
+FM (Freq. Modulation, analog) = FSK (digital)
+
+Rec_Signal = Send_Signal + Noise
+
+UTP: Unshielded Twisted Pair
+STP:   Shielded Twisted Pair
+Coax: Best media
+
+
+10 Mbit: 2 pairs (only 50% of cable)
+ 1 Gbit: 4 pairs
+
+
+Straighttrough:	Both sides same standarts 	network-host
+Crossover:		different standarts			network-network
+
+Cablecom:	1GHz because of Coax
+	        10^x with fiber
+Swisscom:	1MHz because of DSL
+
+LWL: Lichtwellen leiter (Fiber)
+
+Wireless media
+	Wifi: Only 1 enddevice can send at a time, else it gets scrambled
+	Bluetooth
+	Wimax (death)
+
+Halfduplex:	One device can send per time
+Fullduplex:	Both devices can send per time
+
+Token Ring: Bitmuster wird von PC zu PC weitergegeben
+			PC mit Token kann für eine Zeit lang senden
+			Bus-Topology, end points are connected together --> Ring-Topology
+
+
+CSMA/CD 	

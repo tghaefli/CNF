@@ -1,0 +1,31 @@
+Encapsulation 
+	Ethernet | IP | TCP | HTTP | DATA | Ethernet-crc 
+
+
+Unicast:	1 to 1
+Multicast:	1 to several
+Broadcast:	1 to all
+
+
+TCP - OSI model
+http://2.bp.blogspot.com/-9j21c455o6M/UsRHJhvaLgI/AAAAAAAAAsw/ZsAL3p754OE/s1600/OSI-TCP-Model-v1.png
+
+
+Protocols:
+	TCP/IP:		most common (oldest common denominator)
+	ISO:		nobody uses ISO
+	AppleTalk:	For apple servers (alot of features)
+
+IPv6 was released 2011
+
+
+Segmentation: Break communication into pieces
+	i.e. for large files
+	for tcp/ip packages
+
+Multiplexing: interleave
+	pers1 / pers2 / per3 / per1 / ....
+
+
+MAC address
+	"unique"

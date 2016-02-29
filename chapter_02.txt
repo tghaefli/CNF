@@ -1,8 +1,43 @@
+Primary COmmand Modes
+	Switch>		User EXEC Mode
+	Switch#		Privileged EXEC Mode
 
->		level1:		basic commands
-#		enable:		enter configuration mode
-[configure]#	configure:	enter configuration mode
+	>			default:						guest / basic commands
+	#			enable:							enter configuration mode
+	(config)#	configure terminal / conf t:	enter configuration mode
 
+
+config files are saved as raw text. can be transfered over ftp
 
 commands are executed immediatly
 
+secureCRT - putty - teraterm
+
+
+Setup password for console port (physical)
+	(config)# line console 0
+	(config-line)# passwrd cisco
+	(config-line)# login
+	(config-line)# exit
+
+Setup password for virtual terminal ....
+	(config)# line vty 0 15
+	(config-line)# password cisco
+	(config-line)# login
+
+
+enable secret class:					set password to "class"
+	# show running-config					display current config
+	# copy running-config startup-config	from --> to
+	# reload								powre off-->on
+
+win:  ipconfig
+unix: ifconfig
+
+Set ip on a physical port
+	(config)#		interface VLAN 1
+	(config-if)#	ip address 192.168.0.12 255.255.255.0
+	(config-if)#	no shutdown
+
+
+# show ip interface brief
