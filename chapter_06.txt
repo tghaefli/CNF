@@ -1,3 +1,38 @@
+Layer 3 Network:	IPv4, IPv6
+
+Transport Layter PDU = Segment
+	| Segment Header | Data |
+
+IP Protocol: 	Conectionless: No connection with the destination is established before sending data packets.
+				Best effort: IP is inherently unreliable because packet delivery is not guaranteed.
+				Media Independet: Operation is independent of the medium (i.e., copper, fiber optic, or wireless) carrying the data.
+
+
+IPv4: 	Version "0100"
+
+IPv6:	Version "0110"
+	HOP limit = TTL
+	Flow label: ......
+
+gateway: Routs traffic to another network
+
+
+RAM:	Running IOS
+		Racket buffer
+		routing table / arp table
+NVRAM:	Startup configuratin File
+Flash:	IOS
+ROM:	Bootup information
+		power-on self-test (POST)
+
+
+AUX port:	Ethernet port
+Console:	RJ45 / USB
+
+
+Bootup:	IOS from Flash --> RAM
+		start-up config from NVMRAM --> running config in RAM
+
 
 
 

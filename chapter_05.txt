@@ -1,5 +1,31 @@
+Ethernetframe: Layer 1 and 2
+
+Ethernet: Most widely used LAN technology
+
+FF:FF:FF:FF:FF:FF	broadcast mac address
+255:255:255:255		broadcast IP address
+
+promiscous mode:	don't throw packages away
 
 
+0000 :	Class A
+1000 :	Class B (10. )
+1100 :	Class C
+1110 :	Class D (127. )
+
+CIDR: Claseless
+
+An Ethernet switch is a Layer 2 device, which means it uses MAC addresses to make forwarding decisions.
+It is completely unaware of the protocol being carried in the data portion of the frame, such as an IPv4 packet.
+
+
+Switch: Modern Hub, has a buffer for each physical port output.
+
+Switch: Check CRC -->	if correct: forward it
+						if wrong: throw package away
+
+
+ARP spoofing:	change mac addresses associated to their IP
 
 
 

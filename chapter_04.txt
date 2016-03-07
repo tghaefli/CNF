@@ -40,10 +40,26 @@ Wireless media
 
 Halfduplex:	One device can send per time
 Fullduplex:	Both devices can send per time
+Simplex:	...
+Multiplex:	...
+
 
 Token Ring: Bitmuster wird von PC zu PC weitergegeben
 			PC mit Token kann für eine Zeit lang senden
 			Bus-Topology, end points are connected together --> Ring-Topology
 
 
-CSMA/CD 	
+CSMA/CD: 	Switch - Router
+CSMA/CA: 	WLAN Node - End devices (Laptop)
+
+bandwith: 	capacity to carry data
+
+
+Multimode: 	cheap: LED as light source
+			several paths for light
+			short distance (LAN)
+
+Singlenode:	Laser as lightsource
+			long distance (WAN)
+
+
