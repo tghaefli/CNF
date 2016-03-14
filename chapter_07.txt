@@ -1,4 +1,71 @@
+Commands:
+	R1>				ena
+	R1#				conf term
+	R1#				show ip int brief
 
+	R1(config)#		interface gigabitEthernet 0/12
+	R2(config)#		no ip domain-lookup
+
+
+
+IPv4 <--> IPv6 translation required atm
+
+Subnetmask:
+	1: Network portion	(255.255.255xxx)
+	0: host portion		(xxx.xxx.xxx.000)
+	192.168.0/24
+
+AND-verknüpfung zwischen IP-Adresse und Subnetmaske ergibt uns die Netzwerk-Adresse
+
+Adressen:
+	xxx.xxx.xxx.0	????
+	xxx.xxx.xxx.1	first address / default gateway
+	xxx.xxx.xxx.254	last address
+	xxx.xxx.xxx.255	broadcast address
+
+	local-addresses
+		10.0.0.0	/8		10.0.0.0	- 10.255.255.255
+		172.16.0.0	/12		172.16.0.0	- 172.31.255.255
+		192.168.0.0	/16		192.168.0	- 192.168.255.255
+		IPv6 also has some local addresses, although they are not needed anymore
+		NAT will still be used for IPv4 <--> IPv6 translation, not for "firewall" usage
+
+	Loopback
+		127.x.x.x 	/8
+
+	APIPA (connect 2 pc without any hub/switch/dhcp)
+		169.254.0.0	/16
+
+
+
+Class A: 	/ 8
+Class B:	/16
+Class C: 	/24    today we use sub-netting, not classes anymore
+
+
+RIPE NCC: Distributor of IPv4 addresses
+
+Dual Stack:	Use IPv4 and IPv6 together.
+			Implemented by SW on end devices
+			using IPv6 and trying to reach IPv4 is not supported
+			method 1: Pack IPv6 into IPv4 package
+			method 2: Tunneling (i.e. VPN)
+			method 3: NAT64 Router, needs configuration ; IPv6 <--> IPv4
+
+IPv6 supports alot of automatic mechanisms
+	i.e. fe80:xxxxx		Link local: translates current IPv4 into IPv4 for local use
+	last 64 bits from the address are the MAC address bits
+	lot of automation --> make life easier for administrator
+
+	Omit leading zero: 	:000A:		--> :A:
+						:0:0:ACDF	-->	::ACDF  			; only one :: is allowed
+						FF02:0:0:0:0:0:0:1	-->		FF02::1	;	all hosts
+						FF02:0:0:0:0:0:0:2	-->		FF02::2	;	all routers
+						::1									; 	local host
+
+Summary:	IPv4 is slowly dying
+			IPv6 is the new standart in 10 years
+			IPv4 will be still used for home networks
 
 
 

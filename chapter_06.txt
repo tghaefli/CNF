@@ -38,3 +38,9 @@ Bootup:	IOS from Flash --> RAM
 
 
 
+
+
+Network Layer (IP Layer) is Software, compatible all over the world
+
+
+
