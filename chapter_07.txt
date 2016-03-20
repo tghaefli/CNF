@@ -43,7 +43,7 @@ Class B:	/16
 Class C: 	/24    today we use sub-netting, not classes anymore
 
 
-RIPE NCC: Distributor of IPv4 addresses
+RIPE NCC: Distributor of IPv4 addresses for Europe
 
 Dual Stack:	Use IPv4 and IPv6 together.
 			Implemented by SW on end devices
