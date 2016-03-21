@@ -1,3 +1,34 @@
+*** Application Layer ***
+
+CONNECT TO THE MOTHERSHIP
+
+
+All in Application Layer in TCP/IP Model (real life)
+	Session: Login with username and password	
+	Presentation: How the data is show (gif, jpeg, png,...)
+	Application: Process data
+
+Application has usually same name as the Protocol
+
+Client-Server Model:
+	Server has Port 80
+	Client has Port 51924
+
+Peer-to-Peer:
+	Mesh Network, Everyone is Client and Server
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

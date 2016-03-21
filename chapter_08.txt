@@ -1,5 +1,23 @@
+*** Subnetting ***
+
+HOW TO REMOVE MALWARE?
+MAKE THE WINDOW OPEN AND *SWOOOSH*
 
 
+192.168.1.0 / 24
+	192.168.1.0  -127
+	192.168.1.128-255
+Subnet: 255.255.255.128
 
+Subnet can not be 1111'1111.1100'1111.xxx, It must be all towards the left
 
+IPv6:	Always 64Bit Network // 64Bit Host (very easy!)
+		We can split up the address, but it's not done
 
+		48bits Global Routing Prefix	> =64 bits
+		16bits Subnet ID				   ^
+		64bits Interfaces ID / End Devices
+
+		Always use x*4Bits for Subnetting with IPv4 --> think big (0 to F)
+
+30 Hosts = 2^x > 30 --> x=5 Bits

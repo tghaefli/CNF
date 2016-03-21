@@ -1,5 +1,40 @@
+IP is not reliable, TCP make it reliable with Ack
+
+TCP/IP Model:
+	Application Layer:
+		(T)FTP, SMTP, HTTP, DNS,
+	Transport:
+		TCP, UDP
+	Internet:
+		IP
+	Network Access:
+		LAN, WLAN
+
+OIS Model:
+	....
+
+TCP: reliable, bigger overhead, Package-Nbr, Port-Nbr (Mail, Webpage)
+UDP: unreliable, small overhead, Package-Nbr, Port-Nbr (phone, video)  ==> Higher Performance
+
+TCP was sucessful because of Flowcontrol:
+	Ensure the reciver has buffer-space and is not overloaded
+	Change Transmissionrate
+	Change Package size
+
+Ports can seperate Application (51112 --> Firefox, 61242 --> Deluge, ...)
+OS handels the source(appication) ports
+
+0     -  1023: well known ports
+1024  - 49151: reigstered port
+49152 - 65535: open ports
+
+Source Port: Random
+Destination Port: Known port
+
+TCP open connection: 3 way handshake  with SYN --> SYN,ACK --> ACK 
+TCP close connection: 3 way handshake with FIN--> ack, ack <-- FIN	(is a flag)
 
 
-
-
-
+Skype required TCP and UDP
+	TCP: create and establist a connection
+	UDP: Send Voice
