@@ -1,5 +1,23 @@
+QoS: Skype / Voice ( cannot be buffered)
+     Netflix (can be buffered)
+     might need symmetrical connection from ISP (upspeed = downspeed)
+
+Priority:   Voice > SMTP > Web > FTP
+
+Traffic Logging: Only when needed, if there's a problem
+
+Types of Vulnerabilities:
+Technological - Vulnerabilities in protocols, operating systems, and network equipment
+Configuration - Vulnerabilities created by misconfigured devices, default configuration values, and easily guessed passwords
+Security policy - Lack of security policy, software and hardware installation is not consistent with security policy, and no disaster or recovery plan
 
 
+R2# auto secure  --> Close router, disable unused protocols, close physicales ports
+login block      --> Timeout a user for a certain time
+exec-timeout     --> Close execute mode aftre a certain time
 
+Tracert:   * = No respond, but package is forwarded (usually a firewall)
 
-
+CDP:        Cisco protocol, works on physical link: Is a connection there?
+LLDP:       Open protocol
+show cdp neighbour: List neighbours

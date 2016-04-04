@@ -7,6 +7,12 @@ Primary COmmand Modes
 	(config)#	configure terminal / conf t:	enter configuration mode
 
 
+	1.) user EXEC mode
+	2.) privileged EXEC mode (by  enable)
+	3.) global configuration mode (by configure terminal)
+	4.) line configuration mode (by line console 0)
+
+
 config files are saved as raw text. can be transfered over ftp
 
 commands are executed immediatly
@@ -43,3 +49,4 @@ Set ip on a physical port
 # show ip interface brief
 
 
+ default SVI on a Cisco switch: VLAN 1
