@@ -1,1 +1,35 @@
-sdf
+Different apps have different requirements:
+    - Latency
+    - Bandwidth
+
+Borderless switched network:
+    - Hierarchical
+    - Modularity
+    - Resiliency
+    - Flexibility
+
+Switching:
+    - Only send package to destination IP, to to all devices
+
+Switched Network:   - Traffic managment (can prefere Voice over other packages)
+                    - More flexible
+                    - Firewall
+                    - Limit Bandwidth on a port
+
+
+
+Switch: All devices want to connect to the internet --> 1 port (to router) is occupied
+        Buffer in the switch stores Frames and forwards them once the port is open
+
+Store and Forward:  Receive whole package --> Read CRC and Dest-IP --> Forward Package
+                    | Preamble | MAC_D | MAC_S | .... | FCS (=CRC) |
+                    bigger latency
+                    Less bandwidth, because false frames are dropped and not forwarded
+                    FCS (Frame Check Sum - CRC)
+Cut Trough:         Wait for Dest-IP, once IP is valid forward every bit it still receives
+                    small latency
+Standart:           Mix of both
+                    Store packages when port is busy
+    
+
+Stackable Platform: Multiple devices connected. Seen as once.
