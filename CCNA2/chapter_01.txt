@@ -1,3 +1,12 @@
+Layers:
+    Core <--> Distribution <--> Access
+    Core  +   Distribution <--> Access
+    Core: Backbone, Highspeed
+    Distribution: Smart Layer, Routing, Filtering, QoS
+    Access: End Devices (Laptops, Cell, Printer)
+
+    
+
 Different apps have different requirements:
     - Latency
     - Bandwidth
